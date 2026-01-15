@@ -1,0 +1,88 @@
+"use client"
+
+import { useState } from "react"
+import Link from "next/link"
+import { Menu, X } from "lucide-react"
+import { Button } from "@/components/ui/button"
+
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <Link href="/" className="flex items-center gap-2">
+            <span className="font-serif text-xl md:text-2xl font-bold text-foreground tracking-tight">APEX</span>
+            <span className="text-xs text-muted-foreground tracking-widest uppercase">Construction</span>
+          </Link>
+
+          <nav className="hidden md:flex items-center gap-8">
+            <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Services
+            </Link>
+            <Link href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Projects
+            </Link>
+            <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              About
+            </Link>
+            <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Contact
+            </Link>
+          </nav>
+
+          <div className="hidden md:block">
+            <Button asChild>
+              <Link href="#contact">Get a Quote</Link>
+            </Button>
+          </div>
+
+          <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <nav className="flex flex-col gap-4">
+              <Link
+                href="#services"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link
+                href="#projects"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </Link>
+              <Link
+                href="#about"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href="#contact"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <Button asChild className="mt-2">
+                <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
+                  Get a Quote
+                </Link>
+              </Button>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  )
+}
