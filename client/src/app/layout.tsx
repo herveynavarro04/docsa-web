@@ -8,9 +8,9 @@ const _inter = Inter({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Apex Construction | Building Excellence Since 1998",
+  title: "Docsa Insumos y Servicios | Construyendo Su Grandeza desde 2016",
   description:
-    "Premium construction services for residential and commercial projects. Quality craftsmanship, on-time delivery, and exceptional results.",
+    "Soluciones integrales en construcción, mantenimiento industrial y suministro de equipo especializado en México y Estados Unidos.",
 }
 
 export default function RootLayout({

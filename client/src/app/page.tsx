@@ -1,10 +1,10 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
-import { Projects } from "@/components/projects"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { Supplies } from "@/components/supplies"
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
-      <Projects />
+      <Supplies />
       <About />
       <Contact />
       <Footer />

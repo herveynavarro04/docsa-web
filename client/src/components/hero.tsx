@@ -15,19 +15,18 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="max-w-3xl">
           <p className="text-primary-foreground/80 text-sm tracking-widest uppercase mb-4">
-            Building Excellence Since 1998
+            Construyendo Su Grandeza desde 2016
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6 text-balance">
-            Crafting Spaces That Inspire
+            Ingeniería que Construye Futuro
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-            From concept to completion, we deliver exceptional construction services with uncompromising quality and
-            attention to detail.
+            Soluciones integrales en construcción, mantenimiento industrial y suministro de equipo especializado en México y Estados Unidos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" variant="secondary" asChild>
-              <Link href="#projects">
-                View Our Work
+              <Link href="#services">
+                Nuestros Servicios
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -37,7 +36,7 @@ export function Hero() {
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
               asChild
             >
-              <Link href="#contact">Request a Quote</Link>
+              <Link href="#contact">Cotizar Proyecto</Link>
             </Button>
           </div>
         </div>

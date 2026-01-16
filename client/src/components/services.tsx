@@ -1,36 +1,51 @@
-import { Building2, Home, Hammer, HardHat, Ruler, Wrench } from "lucide-react"
+import { Building2, Layers, Anchor, Boxes, Truck, Zap, Power, Wind, Droplet } from "lucide-react"
 
 const services = [
   {
     icon: Building2,
-    title: "Commercial Construction",
-    description: "Full-service commercial building solutions for offices, retail spaces, and industrial facilities.",
+    title: "Diseño y Construcción Estructural",
+    description: "Soluciones estructurales seguras y eficientes para proyectos industriales y comerciales.",
   },
   {
-    icon: Home,
-    title: "Residential Building",
-    description: "Custom homes and residential developments built with precision and care.",
+    icon: Layers,
+    title: "Mezzanines Metálicos",
+    description: "Diseño y fabricación de mezzanines metálicos para optimizar espacios operativos.",
   },
   {
-    icon: Hammer,
-    title: "Renovations",
-    description: "Transform existing spaces with our expert renovation and remodeling services.",
+    icon: Anchor,
+    title: "Cimentación de Equipos Industriales",
+    description: "Cimentaciones especializadas para maquinaria pesada, garantizando estabilidad y precisión.",
   },
   {
-    icon: Ruler,
-    title: "Design-Build",
-    description: "Streamlined design and construction under one roof for efficient project delivery.",
+    icon: Boxes,
+    title: "Diseño y Montaje de Racks",
+    description: "Sistemas de racks industriales diseñados y montados para máxima capacidad y seguridad.",
   },
   {
-    icon: HardHat,
-    title: "Project Management",
-    description: "Professional oversight ensuring your project stays on time and within budget.",
+    icon: Truck,
+    title: "Montaje y Maniobras de Equipo Industrial",
+    description: "Instalación y maniobras controladas de equipos industriales con personal especializado.",
   },
   {
-    icon: Wrench,
-    title: "Maintenance",
-    description: "Ongoing facility maintenance and repair services to protect your investment.",
+    icon: Zap,
+    title: "Redes Eléctricas en Media y Alta Tensión",
+    description: "Instalación y mantenimiento de redes eléctricas industriales en media y alta tensión.",
   },
+  {
+    icon: Power,
+    title: "Subestaciones y Capacitores",
+    description: "Diseño e instalación de subestaciones eléctricas y bancos de capacitores.",
+  },
+  {
+    icon: Wind,
+    title: "Redes Industriales de Fluidos y Aire Comprimido",
+    description: "Sistemas industriales de tuberías para fluidos y aire comprimido de alto rendimiento.",
+  },
+  {
+    icon: Droplet,
+    title: "Concreto y Pisos Epóxicos",
+    description: "Colado de concreto industrial y aplicación de pisos epóxicos de alta resistencia.",
+  }
 ]
 
 export function Services() {
@@ -38,9 +53,9 @@ export function Services() {
     <section id="services" className="py-20 md:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-primary text-sm tracking-widest uppercase mb-3">What We Do</p>
+          <p className="text-primary text-sm tracking-widest uppercase mb-3">Nuestros Servicios</p>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground text-balance">
-            Comprehensive Construction Services
+            Servicios De Construcción
           </h2>
         </div>
 

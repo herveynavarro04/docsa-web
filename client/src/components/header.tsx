@@ -12,29 +12,32 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="font-serif text-xl md:text-2xl font-bold text-foreground tracking-tight">APEX</span>
-            <span className="text-xs text-muted-foreground tracking-widest uppercase">Construction</span>
-          </Link>
+        <Link href="/" className="flex items-center px-2 py-2">
+          <img
+            src="/docsa-logo.png"
+            alt="docsa-logo"
+            className="max-h-full h-22 md:h-24 w-auto"
+          />
+        </Link>
 
           <nav className="hidden md:flex items-center gap-8">
             <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Services
+              Servicios
             </Link>
-            <Link href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Projects
+            <Link href="#supplies" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Insumos Industriales
             </Link>
             <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              About
+              Nosotros
             </Link>
             <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Contact
+              Contacto
             </Link>
           </nav>
 
           <div className="hidden md:block">
             <Button asChild>
-              <Link href="#contact">Get a Quote</Link>
+              <Link href="#contact">Obtener Cotización</Link>
             </Button>
           </div>
 
