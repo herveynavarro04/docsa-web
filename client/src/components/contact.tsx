@@ -61,7 +61,7 @@ Mensaje: ${formData.message}
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary-foreground/10 flex items-center justify-center">
-                  <Mail className="h-5 w-5 text-primary-foreground" />
+                  <Phone className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <div>
                   <p className="text-primary-foreground/60 text-sm">Número</p>
@@ -70,7 +70,7 @@ Mensaje: ${formData.message}
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary-foreground/10 flex items-center justify-center">
-                  <MapPin className="h-5 w-5 text-primary-foreground" />
+                  <Mail className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <div>
                   <p className="text-primary-foreground/60 text-sm">Email</p>
