@@ -39,6 +39,22 @@ const carouselImages = [
     src: "/tubos.jpeg",
     alt: "Cosa de construcción",
   },
+  {
+    src: "/cargando.jpeg",
+    alt: "Cosa de construcción",
+  },
+  {
+    src: "/cables.jpeg",
+    alt: "Cosa de construcción",
+  },
+  {
+    src: "/lubre.jpeg",
+    alt: "Cosa de construcción",
+  },
+  {
+    src: "/reparando.jpeg",
+    alt: "Cosa de construcción",
+  },
 ]
 
 export function About() {

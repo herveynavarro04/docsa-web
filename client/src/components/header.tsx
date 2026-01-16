@@ -54,32 +54,32 @@ export function Header() {
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Services
+                Servicios
               </Link>
               <Link
                 href="#projects"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Projects
+                Insumos
               </Link>
               <Link
                 href="#about"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                Nosotros
               </Link>
               <Link
                 href="#contact"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                Contacto
               </Link>
               <Button asChild className="mt-2">
                 <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
-                  Get a Quote
+                  Obtener Cotización
                 </Link>
               </Button>
             </nav>
