@@ -5,13 +5,6 @@ import { ArrowRight } from "lucide-react"
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-primary pt-16">
-      <div className="absolute inset-0">
-        <img
-          src="/modern-construction-site-with-crane-at-sunset.jpg"
-          alt="Construction site"
-          className="w-full h-full object-cover opacity-30"
-        />
-      </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="max-w-3xl">
           <p className="text-primary-foreground/80 text-sm tracking-widest uppercase mb-4">
